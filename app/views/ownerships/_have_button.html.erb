@@ -2,7 +2,7 @@
   <%= form_tag(ownership_path(item.id), method: :delete) do %>
     <%= hidden_field_tag :item_id, item.id %>
     <%= hidden_field_tag :type, 'Have' %>
-    <%= submit_tag 'Unwant', class: 'btn btn-success' %>
+    <%= submit_tag 'Unhave', class: 'btn btn-success' %>
   <% end %>
 <% else %>
   <%= form_tag(ownerships_path) do %>
